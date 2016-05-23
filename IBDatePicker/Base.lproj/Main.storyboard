@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nwn-23-HaS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="5jx-y2-OM8">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nwn-23-HaS" customClass="ViewController" customModule="IBDatePicker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="wa0-AE-qPN"/>
+                        <viewControllerLayoutGuide type="bottom" id="cpQ-hl-Z2Q"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="XGp-ux-iuJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mi5-hf-n1B" customClass="IBDatePicker" customModule="IBDatePicker" customModuleProvider="target">
+                                <rect key="frame" x="10" y="236" width="580" height="128"/>
+                                <color key="backgroundColor" red="0.90016025639999997" green="0.90016025639999997" blue="0.90016025639999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Mi5-hf-n1B" secondAttribute="trailing" constant="10" id="BWr-ta-aYo"/>
+                            <constraint firstItem="Mi5-hf-n1B" firstAttribute="centerY" secondItem="XGp-ux-iuJ" secondAttribute="centerY" id="odj-Xa-Aml"/>
+                            <constraint firstItem="Mi5-hf-n1B" firstAttribute="top" secondItem="wa0-AE-qPN" secondAttribute="bottom" constant="216" id="vA8-9f-X4e"/>
+                            <constraint firstItem="Mi5-hf-n1B" firstAttribute="leading" secondItem="XGp-ux-iuJ" secondAttribute="leading" constant="10" id="zE4-wb-gou"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Mi5-hf-n1B" id="1Ui-sy-oLe"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBY-8n-3uz" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="405" y="160"/>
         </scene>
     </scenes>
 </document>
