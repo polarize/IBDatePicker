@@ -7,7 +7,7 @@ public class IBDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
 	// MARK: Public Properties
 	
 	/// The font for the date picker.
-	public var font = UIFont.systemFontOfSize(24.0)
+	public var font = UIFont.systemFontOfSize(25.0)
 	
 	/// The text color for the date picker components.
 	public var textColor = UIColor.blackColor()
@@ -114,7 +114,6 @@ public class IBDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
 		let bottomConstraint = NSLayoutConstraint(item: self.pickerView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1, constant: 0)
 		let leftConstraint = NSLayoutConstraint(item: self.pickerView, attribute: .Leading, relatedBy: .Equal, toItem: self, attribute: .Leading, multiplier: 1, constant: 0)
 		let rightConstraint = NSLayoutConstraint(item: self.pickerView, attribute: .Trailing, relatedBy: .Equal, toItem: self, attribute: .Trailing, multiplier: 1, constant: 0)
-		
 		self.addConstraints([topConstraint, leftConstraint, bottomConstraint, rightConstraint])
 		
 	}
@@ -584,12 +583,12 @@ public class IBDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
 			size = Double(dayComponentSizingString.sizeWithAttributes(stringSizingAttributes).width)
 		} else if calendarComponent == .Year  {
 			// Pad the year string to four digits.
-			let yearComponentSizingString = NSString(string: "00")
+			let yearComponentSizingString = NSString(string: "0000")
 			size = Double(yearComponentSizingString.sizeWithAttributes(stringSizingAttributes).width)
 		}
 		
 		// Add the width buffer in order to allow the picker components not to run up against the edges
-		return CGFloat(size + widthBuffer + 30)
+		return CGFloat(size + widthBuffer)
 	}
 	
 	public func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
