@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 		super.viewWillAppear(animated)
 		datePicker.minimumDate = NSDate().dateByAddingTimeInterval(validPast)
 		datePicker.maximumDate = NSDate()
-		datePicker.delegate = self
+		
 	}
 	
 }
