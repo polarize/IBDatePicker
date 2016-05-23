@@ -12,6 +12,9 @@
 		C293CA641CF2E4DA00EF4E98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C293CA621CF2E4DA00EF4E98 /* Main.storyboard */; };
 		C293CA661CF2E4DA00EF4E98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C293CA651CF2E4DA00EF4E98 /* Assets.xcassets */; };
 		C293CA691CF2E4DA00EF4E98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C293CA671CF2E4DA00EF4E98 /* LaunchScreen.storyboard */; };
+		C293CA741CF2E87300EF4E98 /* IBDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293CA711CF2E87300EF4E98 /* IBDatePicker.swift */; };
+		C293CA751CF2E87300EF4E98 /* IBDatePickerComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293CA721CF2E87300EF4E98 /* IBDatePickerComponents.swift */; };
+		C293CA761CF2E87300EF4E98 /* IBDatePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293CA731CF2E87300EF4E98 /* IBDatePickerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C293CA651CF2E4DA00EF4E98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C293CA681CF2E4DA00EF4E98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C293CA6A1CF2E4DA00EF4E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C293CA711CF2E87300EF4E98 /* IBDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDatePicker.swift; sourceTree = "<group>"; };
+		C293CA721CF2E87300EF4E98 /* IBDatePickerComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDatePickerComponents.swift; sourceTree = "<group>"; };
+		C293CA731CF2E87300EF4E98 /* IBDatePickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDatePickerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		C293CA5D1CF2E4DA00EF4E98 /* IBDatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				C293CA701CF2E85500EF4E98 /* DatePicker */,
 				C293CA5E1CF2E4DA00EF4E98 /* AppDelegate.swift */,
 				C293CA601CF2E4DA00EF4E98 /* ViewController.swift */,
 				C293CA621CF2E4DA00EF4E98 /* Main.storyboard */,
@@ -62,6 +69,16 @@
 				C293CA6A1CF2E4DA00EF4E98 /* Info.plist */,
 			);
 			path = IBDatePicker;
+			sourceTree = "<group>";
+		};
+		C293CA701CF2E85500EF4E98 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C293CA711CF2E87300EF4E98 /* IBDatePicker.swift */,
+				C293CA721CF2E87300EF4E98 /* IBDatePickerComponents.swift */,
+				C293CA731CF2E87300EF4E98 /* IBDatePickerDelegate.swift */,
+			);
+			path = DatePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C293CA611CF2E4DA00EF4E98 /* ViewController.swift in Sources */,
+				C293CA761CF2E87300EF4E98 /* IBDatePickerDelegate.swift in Sources */,
+				C293CA751CF2E87300EF4E98 /* IBDatePickerComponents.swift in Sources */,
+				C293CA741CF2E87300EF4E98 /* IBDatePicker.swift in Sources */,
 				C293CA5F1CF2E4DA00EF4E98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
